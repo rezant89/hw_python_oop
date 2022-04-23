@@ -7,11 +7,12 @@ class InfoMessage:
                  speed: float,
                  calories: float
                  ):
-                self.training_type: str = training_type
-                self.duration: float = duration
-                self.distance: float = distance
-                self.speed: float = speed
-                self.calories: float = calories    
+        self.training_type = training_type
+        self.duration = duration
+        self.distance = distance
+        self.speed = speed
+        self.calories = calories
+        
     def get_message(self) -> str:
         return (f'Тип тренировки: {self.training_type}; ' 
                      f'Длительность: {self.duration:.3f} ч.; '
